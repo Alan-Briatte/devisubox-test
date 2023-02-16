@@ -10,7 +10,8 @@ function MyEvent(props: { elem: TicketMasterEvent }) {
         {
             elem.address ?
                 <ListItemText primary={elem.city.name} secondary={elem.address.line1}>
-                </ListItemText> : null
+                </ListItemText> : <ListItemText primary={elem.city.name}>
+                </ListItemText>
         }
     </ListItem>);
 }
